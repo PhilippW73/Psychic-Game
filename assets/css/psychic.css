@@ -1,0 +1,28 @@
+#pic {
+	height: 300px;
+	width: 500px;
+	margin-left: 400px;
+	margin-top: 15px;
+	position: relative;
+}
+
+#game {
+	text-align: center;
+}
+body {
+	background-color: #8E44AD;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+@media screen and (max-width: 768px) {
+#pic {
+    margin-left: 150px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+#pic {
+    margin-left: 80px;
+	}
+
+}

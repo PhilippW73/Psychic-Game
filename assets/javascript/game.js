@@ -23,13 +23,11 @@ document.onkeyup = function(event) {
 	       //alert("Wrong guess");
 	       guessesLeft--;
 	   	} 
-
 		   	else {
 				//alert("You won");
 				wins++;
 				reset();
 			}
-		
 				if (guessesLeft === 0) {
 					losses++;
 					reset();
