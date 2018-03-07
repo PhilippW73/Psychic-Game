@@ -6,9 +6,9 @@ The app randomly picks a letter, and the user has to guess which letter the app 
 
 The user has 9 guesses to match the randomly picked letter from the computer.
 
-When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
+When the player wins, the Wins counter will be increased and the game starts over again (without refreshing the page).
 
-When the player loses, increase the Losses counter and restart (after 9 guesses) the game without a page refresh (just like when the user wins).
+When the player loses, the Losses counter will be increased and the game (after 9 guesses) restarts without a page refresh (just like when the user wins).
 
 ## Built with:
 - HTML
