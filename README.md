@@ -1,7 +1,6 @@
 # Psych-Game
 - Do you have psychic power and can read a computers mind? If yes, play this game and test your abilities
 
-----
 ## How it works
 The app randomly picks a letter, and the user has to guess which letter the app chose. 
 
