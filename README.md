@@ -1,4 +1,4 @@
-# Psych-Game
+# Psychic-Game
 - Do you have psychic power and can read a computers mind? If yes, play this game and test your abilities
 
 ## How it works
