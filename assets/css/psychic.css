@@ -1,17 +1,23 @@
+body {
+	background-color: #0C186E;
+	font-family: 'Fredericka the Great', cursive;
+	color: white;
+}
+
 #pic {
 	height: 300px;
 	width: 500px;
-	margin-left: 400px;
+	margin-left: 450px;
 	margin-top: 15px;
 	position: relative;
 }
 
-#game {
+#text {
 	text-align: center;
 }
-body {
-	background-color: #8E44AD;
-	font-family: 'Fredericka the Great', cursive;
+
+#game {
+	text-align: center;
 }
 
 @media screen and (max-width: 768px) {

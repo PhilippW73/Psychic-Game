@@ -1,30 +1,27 @@
-var computerChoices = ['a', 'b', 'c', 'd','e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-
+var computerChoices = ['a', 'b', 'c', 'd','e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var wins = 0;
 var losses = 0;
 var guessesLeft = 10;
 var queries = [];
-
 var userGuess;
-var computerPick;
+var computerPick = computerChoices[Math.floor(Math.random()*computerChoices.length)];
 
-document.onkeyup = function(event) {
-    console.log("computerPick")  
-    console.log(computerPick)  
-      
-      userGuess = event.key;
-      computerPick = computerPickLetter();
-
+document.onkeyup = function(event) {      
+    
+    userGuess = event.key;
+    
     if (computerChoices.includes(userGuess)){
 
-    	queries.push(userGuess);
+    queries.push(userGuess);
 
-	    if (userGuess !== computerPick) {
-	       //alert("Wrong guess");
-	       guessesLeft--;
+	if (userGuess !== computerPick) {
+
+	guessesLeft--;
+
 	   	} 
+
 		   	else {
-				//alert("You won");
+				
 				wins++;
 				reset();
 			}
@@ -32,25 +29,20 @@ document.onkeyup = function(event) {
 					losses++;
 					reset();
 				}
-
-			function reset(){
-			guessesLeft = 10;
-			queries = [];
-			}
-
+				
 				document.getElementById("wins").textContent = wins;
 				document.getElementById("losses").textContent = losses;
 				document.getElementById("guessesLeft").textContent = guessesLeft;
 				document.getElementById("queries").textContent = queries;
 
     }
-}
+};
 
-function computerPickLetter(){
-	var letter = computerChoices[Math.floor(Math.random()*computerChoices.length)];
-	console.log("computer pick " + letter)
-	return letter;
-}
+function reset(){
+			guessesLeft = 10;
+			queries = [];
+			computerPick = computerChoices[Math.floor(Math.random()*computerChoices.length)];
+};
 
 
 

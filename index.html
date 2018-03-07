@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Psychic-Game</title>
-	<link rel="stylesheet" href="assets/css/psychic.css" class="css">
-	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Limelight|Lobster+Two|Poiret+One|Quicksand" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Psychic-Game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/psychic.css" class="css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Limelight|Lobster+Two|Poiret+One|Quicksand" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-	<img src="assets/images/psychic.jpeg" alt="pic" id='pic'>
-
-<div id="game">
-    <h1>Psychic Game </h1>
-    <h1>Guess what letter I'm thinking of</h1>
-    <h2>Wins: <span id="wins"></span></h2>
-	<h2>Losses: <span id="losses"></span></h2>
-	<h2>Guesses Left: <span id="guessesLeft"></span></h2>
-	<h2>Your Guesses so far: <span id="queries"></span></h2>
-
-<script type="text/javascript" src="assets/javascript/game.js">
-	</script>
-</div>
-
+    <div class="row">
+        <div class="col-sm-12">
+            <img src="assets/images/psychic.jpeg" alt="pic" id='pic'>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" id="text">
+            <h1>Psychic Game </h1>
+            <h1>Guess what letter I'm thinking of</h1>
+            <h2>Wins: <span id="wins"></span></h2>
+            <h2>Losses: <span id="losses"></span></h2>
+            <h2>Guesses Left: <span id="guessesLeft"></span></h2>
+            <h2>Your Guesses so far: <span id="queries"></span></h2>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
+    </div>
 </body>
+
 </html>
